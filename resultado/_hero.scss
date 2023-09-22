@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  max-width: 1200px;
+  place-content: center;
+  place-items: center;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .copy-block {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    padding: 1rem;
+    position: absolute;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}

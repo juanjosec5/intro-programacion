@@ -1,0 +1,52 @@
+@use 'reset';
+@use 'hero';
+
+.header {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  place-content: space-between;
+
+  &__logo {
+    height: 100px;
+    width: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__nav ul {
+    background-color: lightcoral;
+    display: flex;
+    height: 100%;
+    place-items: center;
+
+    li {
+      margin: 0 1rem;
+    }
+  }
+}
+
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  place-content: center;
+  place-items: center;
+
+  .card {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(33% - 1rem);
+    padding: .5rem;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+  }
+}

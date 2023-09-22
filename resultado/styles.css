@@ -1,0 +1,84 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.hero {
+  display: flex;
+  max-width: 1200px;
+  place-content: center;
+  place-items: center;
+  position: relative;
+}
+.hero img {
+  width: 100%;
+}
+.hero .copy-block {
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+  padding: 1rem;
+  position: absolute;
+}
+.hero .copy-block h1 {
+  text-align: center;
+}
+
+.header {
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  place-content: space-between;
+}
+.header__logo {
+  height: 100px;
+  width: 100px;
+}
+.header__logo img {
+  width: 100%;
+}
+.header__nav ul {
+  background-color: lightcoral;
+  display: flex;
+  height: 100%;
+  place-items: center;
+}
+.header__nav ul li {
+  margin: 0 1rem;
+}
+
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  place-content: center;
+  place-items: center;
+}
+.card-gallery .card {
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(33% - 1rem);
+  padding: 0.5rem;
+}
+.card-gallery .card h3 {
+  text-align: center;
+  margin-bottom: 5rem;
+}/*# sourceMappingURL=styles.css.map */
